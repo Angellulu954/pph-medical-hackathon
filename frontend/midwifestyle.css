@@ -68,12 +68,12 @@ h2{
 .statistics-row{
     display: flex;
     gap:20px;
-    padding: 16px 20px
+    padding: 16px 20px;
 }
 .statistics-card{
     flex:1;
     background-color: #F5F7FA;
-    padding:16px;
+    padding: 16px;
     border-radius:12px;
     display:flex;
     flex-direction: column;
@@ -105,7 +105,9 @@ h2{
     background-color: pink;
     width:100%;
     margin-bottom: 8px;
+    
 }
+
 .quickaction-text{
     display: flex;
     flex-direction: column;
@@ -123,10 +125,16 @@ h2{
     background-color: white;
     color:black;
     border: 2px solid salmon;
+    
+}
+
+.quickactions-section{
+    padding: 16px 20px;
 }
 .action-button2 .action-subtitle{
     color:black;
 }
+
 .linkviewall{
     text-decoration: none;
     font-size: 14px;
@@ -136,6 +144,7 @@ h2{
     display:flex;
     justify-content: space-between;
     align-items: center;
+    padding:0 20px;
 
 }
 .submission-items{
@@ -144,11 +153,13 @@ h2{
     justify-content: space-between;
     background-color: white;
     border-radius:12px;
-    padding: 12px 16px;
+    padding:16px 20px;
     margin-bottom:10px;
     border: 1px solid salmon;
+    width: 100%;
 }
 .circular-intials{
+    display: flex;
     border-radius: 50%;
     background-color: rgb(229, 229, 229);
     justify-content: center;
@@ -161,6 +172,11 @@ h2{
     gap: 20px;
 
 }
+.submission-data{
+    padding: 16px 20px;
+}
+
+
 .patient-name{
     font-size: 16px;
     font-weight: 600;
@@ -169,11 +185,18 @@ h2{
     font-size:13px;
     color:rgb(166, 164, 164);
 }
-.status-pill synced{
+.status-pill.synced{
     background-color: rgb(30, 128, 30);
     
     
 }
 .status-pill.pending{
     background-color: rgb(206, 202, 202);
+    
+}
+.status-pill{
+    padding:4px 10px;
+    border-radius:999px;
+    font-size:12px;
+    font-weight:600;
 }
