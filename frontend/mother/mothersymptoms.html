@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HealthSync Provider - Log Symptoms</title>
+<link rel="stylesheet" href="mothersymptoms.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/2.44.0/iconfont/tabler-icons.min.css">
+
+</head>
+<body>
+
+
+    <div class="section-label">SELECT SYMPTOM</div>
+    <div class="symptom-grid" id="symptom-grid">
+      <button class="symptom-card" data-id="nausea"><i class="ti ti-mood-sick"></i><span>Nausea</span></button>
+      <button class="symptom-card" data-id="fatigue"><i class="ti ti-moon"></i><span>Fatigue</span></button>
+      <button class="symptom-card" data-id="back-pain"><i class="ti ti-yoga"></i><span>Back pain</span></button>
+      <button class="symptom-card" data-id="swelling"><i class="ti ti-first-aid-kit"></i><span>Swelling</span></button>
+      <button class="symptom-card" data-id="dizziness"><i class="ti ti-radar-2"></i><span>Dizziness</span></button>
+      <button class="symptom-card" data-id="headache"><i class="ti ti-bell-ringing"></i><span>Headache</span></button>
+      <button class="symptom-card" data-id="blurred vision"><i class="ti ti-bell-ringing"></i><span>Blurred Vision</span></button>
+      <button class="symptom-card" data-id="sudden weight gain"><i class="ti ti-bell-ringing"></i><span>Sudden Weight Gain</span></button>
+      <button class="symptom-card" data-id="abdominal pain"><i class="ti ti-bell-ringing"></i><span>Abdominal pain</span></button>
+      
+    </div>
+
+    <div class="section-label">SEVERITY LEVEL</div>
+    <div class="severity-row" id="severity-row">
+      <button class="severity-btn" data-id="mild">Mild</button>
+      <button class="severity-btn" data-id="moderate">Moderate</button>
+      <button class="severity-btn" data-id="severe">Severe</button>
+    </div>
+
+    <div class="section-label">ADDITIONAL NOTES</div>
+    <textarea placeholder="How are you feeling overall? Describe your observations..."></textarea>
+
+    <button class="submit-btn">
+      <i class="ti ti-send"></i>
+      Submit to Provider
+    </button>
+    
+
+
+
+
+  <script>
+    document.querySelectorAll('#symptom-grid .symptom-card').forEach(card => {
+      card.addEventListener('click', () => {
+        card.classList.toggle('selected');
+      });
+    });
+
+    document.querySelectorAll('#severity-row .severity-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('#severity-row .severity-btn')
+          .forEach(b => b.classList.remove('selected'));
+        btn.classList.add('selected');
+      });
+    });
+  </script>
+
+</body>
+</html>

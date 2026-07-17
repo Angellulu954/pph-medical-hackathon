@@ -1,0 +1,168 @@
+
+  :root {
+    --pink: #9c5271;
+    --pink-dark: #72243E;
+    --pink-light: #cec5c8;
+    --pink-border: #D4537E;
+    --border: #E5E1E4;
+    --text: #1A1620;
+    --text-secondary: #5F5A5E;
+    --bg: rgb(241, 236, 236);
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    padding: 30px;
+    margin: 0 auto;
+    background: var(--bg);
+    color: var(--text);
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 20px;
+    background: #fff;
+    border-bottom: 1px solid var(--border);
+  }
+  .header-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+
+
+
+  h2.page-title {
+    font-size: 24px;
+    color: var(--pink-dark);
+    margin: 0 0 8px;
+  }
+  p.page-desc {
+    font-size: 14px;
+    color: var(--text-secondary);
+    line-height: 1.5;
+    margin: 0 0 20px;
+  }
+
+ 
+  .section-label {
+    font-size: 12px;
+    letter-spacing: 0.05em;
+    color: var(--text-secondary);
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  .symptom-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 24px;
+  }
+  .symptom-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 18px 6px;
+    border-radius: 12px;
+    background:white;
+    border: 1px solid var(--border);
+    cursor: pointer;
+    font: inherit;
+    transition: background 0.15s ease, border-color 0.15s ease;
+  }
+  .symptom-card i {
+    font-size: 22px;
+    color: var(--text);
+  }
+  .symptom-card span {
+    font-size: 12.5px;
+    font-weight: 600;
+    text-align: center;
+  }
+  .symptom-card.selected {
+    background: white;
+    border: 1.5px solid var(--pink-border);
+  }
+  .symptom-card.selected i,
+  .symptom-card.selected span {
+    color: var(--pink-dark);
+  }
+
+  .severity-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 24px;
+  }
+  .severity-btn {
+    padding: 14px 8px;
+    border-radius: 12px;
+    background:white;
+    border: 1px solid var(--border);
+    color: var(--pink);
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    font-family: inherit;
+    transition: background 0.15s ease, border-color 0.15s ease;
+  }
+  .severity-btn.selected {
+    background: var(--pink-light);
+    border: 1.5px solid var(--pink-border);
+    color: var(--pink-dark);
+    font-weight: 600;
+  }
+
+  textarea {
+    width: 100%;
+    min-height: 100px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 14px;
+    font-family: inherit;
+    font-size: 14px;
+    color: var(--text);
+    resize: vertical;
+    margin-bottom: 24px;
+  }
+  textarea::placeholder {
+    color: #A8A2A6;
+  }
+  textarea:focus {
+    outline: none;
+    border-color: var(--pink);
+  }
+
+  .submit-btn {
+    width: 100%;
+    background: rgb(223, 195, 200);
+    color:black;
+    border: none;
+    border-radius: 12px;
+    padding: 16px;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+    font-family: inherit;
+  }
+  .submit-btn:active {
+    background: pink;
+  }
+  .sync-note {
+    text-align: center;
+    font-size: 12.5px;
+    font-weight: 600;
+    color: var(--text-secondary);
+    margin: 12px 0 0;
+  }
+
+ 
