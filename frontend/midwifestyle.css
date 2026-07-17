@@ -1,0 +1,179 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body{
+    margin:16px;
+}
+
+
+.app-container{
+    background-color: #F5F7FA;
+}
+.header-container{
+    background-color: whitesmoke;
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 16px;
+}
+.doctor-image{
+    width: 40px;
+    height:40px;
+    border-radius:50%;
+    object-fit:cover;
+}
+.header-left{
+    display:flex;
+    align-items: center;
+    gap:12px;
+}
+.header-text{
+    color:#FFB7CE;
+    font-size: 18px;
+    
+
+}
+.logout-image{
+    cursor: pointer;
+   
+}
+
+.date-section{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+.welcome-section{
+    background-color: white;
+    padding:18px;
+    border: 1px solid #E5E7EB;
+}
+.eyebrow-text{
+    color:rgb(67, 62, 62);
+    text-transform:uppercase;
+    letter-spacing: 1px;
+    font-size :12px;
+    font-weight:bold;
+    margin-bottom:8px;
+
+}
+h2{
+    color:#FF1493;
+    font-size:28px;
+    margin-bottom: 8px;
+}
+.statistics-row{
+    display: flex;
+    gap:20px;
+    padding: 16px 20px
+}
+.statistics-card{
+    flex:1;
+    background-color: #F5F7FA;
+    padding:16px;
+    border-radius:12px;
+    display:flex;
+    flex-direction: column;
+    gap:4px;
+   
+}
+.stats-num1{
+    font-size:28px;
+    color:rgb(103, 163, 103);
+    font-weight:bold;
+}
+.stats-num2{
+    font-size:28px;
+    color:rgb(127, 127, 181);
+    font-weight:bold;
+}
+.stats-data{
+    font-size:13px;
+    font-weight:500;
+}
+.action-button1 ,.action-button2{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:16px 20px;
+    border-radius:12px;
+    text-decoration: none;
+    color:white;
+    background-color: pink;
+    width:100%;
+    margin-bottom: 8px;
+}
+.quickaction-text{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.action-title{
+    font-size:16px;
+    font-weight: bold;
+}
+.action-subtitle{
+    font-weight:13px;
+    color:rgba(255, 255, 255, 0.8)
+}
+.action-button2{
+    background-color: white;
+    color:black;
+    border: 2px solid salmon;
+}
+.action-button2 .action-subtitle{
+    color:black;
+}
+.linkviewall{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+.submission-header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.submission-items{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    background-color: white;
+    border-radius:12px;
+    padding: 12px 16px;
+    margin-bottom:10px;
+    border: 1px solid salmon;
+}
+.circular-intials{
+    border-radius: 50%;
+    background-color: rgb(229, 229, 229);
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.submission-left{
+    display:flex;
+    align-items: center;
+    gap: 20px;
+
+}
+.patient-name{
+    font-size: 16px;
+    font-weight: 600;
+}
+.submission-meta{
+    font-size:13px;
+    color:rgb(166, 164, 164);
+}
+.status-pill synced{
+    background-color: rgb(30, 128, 30);
+    
+    
+}
+.status-pill.pending{
+    background-color: rgb(206, 202, 202);
+}
